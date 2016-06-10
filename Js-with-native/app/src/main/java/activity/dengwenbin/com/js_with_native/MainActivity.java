@@ -50,20 +50,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void showDialog(final String str){
-        AlertDialog.Builder builder= new AlertDialog.Builder(this);
-        builder.setIcon(R.mipmap.ic_launcher);
-        builder.setTitle("显示输入框的内容");
-        builder.setMessage(str);
-        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, str, Toast.LENGTH_SHORT);
-                dialog.dismiss();
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
+
 
 }
