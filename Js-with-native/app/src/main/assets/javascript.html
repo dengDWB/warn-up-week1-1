@@ -1,0 +1,25 @@
+
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+	<script type="text/javascript">
+		function showAlert(){
+			alert(document.getElementById("nihao").value);
+			window.JsInterface.showDialog(document.getElementById("nihao").value)
+		}
+	</script>
+	<style type="text/css">
+	
+	</style>
+</head>
+	<body align="center">
+	
+		输入:
+		<input type="text" name="nihao" id="nihao"></br>
+		
+		<input type="button" onclick="showAlert();" value="输出内容">
+
+	</body>
+
+</html>
